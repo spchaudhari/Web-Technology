@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Berkshire+Swash&family=Josefin+Sans&family=Montserrat+Subrayada:wght@700&family=Notable&family=Piedra&display=swap');
+
+*{
+	text-decoration: none;
+	list-style: none;
+}
+
+.navbar{
+	width: 100%;
+	height: 65px;
+	display: flex;
+	align-items: center;
+	position: absolute;
+}
+
+.navbar .nav-items ul{
+	display: flex;
+}
+
+.navbar .nav-items ul li{
+	text-transform: uppercase;
+	font-size: 2vw;
+	margin: 0 20px;
+}
+
+.navbar .nav-items ul li a{
+	color: white;
+	border-bottom: 3px solid;
+	background-color: #666678;
+	border-radius: 5px;
+	padding: 10px;
+	text-shadow: 3px 3px black;
+}
+
+.navbar .nav-items ul li a:hover{
+	background-color: black;
+	color: white;
+	border-radius: 20px;
+}
+
+
+.container{
+	margin-top: 5%;
+	font-family: 'Josefin Sans';
+	letter-spacing: 1px;
+}
+
+.container h2{
+	background-color: black;
+	width: 200px;
+	color: #fff;
+	font-size: 24px;
+	padding: 5px;
+	height: 40px;
+	margin-top: 3%;
+}
+
+.container h2:after{
+	content: '';
+	border-top: 40px solid black;
+	border-right: 40px solid transparent;
+	position: relative;
+	left: 48px;
+	top: 34px;
+}
+
+.row{
+	margin-top: 30px;
+}
+
+.container img{
+	width: 100%;
+  	height: auto;
+}
+
+.product-bottom .fa{
+	color: #28a745;
+	font-size: 10px;
+}
+
+.product-bottom h3{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.product-bottom h5{
+	font-size: 15px;
+	padding-bottom: 10px;
+}
+
+.product-bottom h3:hover{
+	color: white;
+	width: 170px;
+	cursor: pointer;
+	background-color: #2a2a64; 
+}
+
+.contaoner img:hover{
+	transform: translateY(15px;);
+	transition: 0.5s;
+}
+
+.overlay .fa{
+	cursor: pointer;
+	background-color: #555;
+	color: #000;
+	height: 35px;
+	width: 35px;
+	font-size: 20px;
+	padding: 7px;
+	margin: 5%;
+	margin-bottom: 5%;
+}
+
+.pages{
+	margin-left: 250px;
+	padding: 5px;
+	font-family: 'Notable';
+	font-size: 30px;
+	margin-top: 20px;
+}
+
+.pages span{
+	font-size: 30px;
+	padding: 5px;
+	margin: 0 auto;
+}
+
+.pages span:hover{
+	color: white;
+	background-color: black;
+	cursor: pointer;
+	padding: 5px;
+}
+
+@media (max-width: 900px){
+	.container{
+		width: 1vw;
+	}
+}
+

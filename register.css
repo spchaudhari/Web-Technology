@@ -1,0 +1,102 @@
+@import "compass/css3";
+
+
+html {
+    overflow-y: scroll; 
+}
+
+body {
+  background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%) no-repeat;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+
+.form {
+  
+  padding: 40px;
+  max-width:600px;
+  margin:40px auto;
+  border-radius:$br;
+  box-shadow:0 4px 10px 4px rgba(0,0,0,0.3);
+}
+
+ 
+li a {
+    display:block;
+    text-decoration:none;
+    padding:15px;
+    background:rgba($gray-light,.25);
+    color:$gray-light;
+    font-size:20px;
+    float:left;
+    width:50%;
+    text-align:center;
+    cursor:pointer;
+    transition:.5s ease;
+    &:hover {
+      background:black;
+      color:white;
+    }
+  }
+  .active a { 
+    color:white;
+  }
+
+
+h1 {
+  text-align:center;
+  color:white;
+  font-weight:thin;
+  margin:0 0 40px;
+}
+
+input, textarea {
+  font-size:22px;
+  display:block;
+  width:100%;
+  height:100%;
+  padding:5px 10px;
+  background:none;
+  background-image:none;
+  border:1px solid $gray-light;
+  color:$white;
+  border-radius:0;
+  transition:border-color .25s ease, box-shadow .25s ease;
+}
+
+textarea {
+  border:2px solid gray;
+  resize: vertical;
+}
+
+.field-wrap {
+  position:relative;
+  margin-bottom:40px;
+}
+
+
+
+.create-button {
+  border:2px solid;
+  left: 1%;
+  outline:none;
+  border-radius:0;
+  padding:15px 0;
+  font-size:2rem;
+  font-weight:bold;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  background:inherit;
+  color:white;
+  transition:all.5s ease;
+  width: 100%;
+  margin-left: 10px;
+}
+
+
+.create-button:hover{
+  background-color: white;
+  color:black;
+  cursor: pointer;
+  border: none;
+}
